@@ -1,6 +1,5 @@
 package com.adesso.tireManagement.repository;
 
-import com.adesso.tireManagement.model.Account;
 import com.adesso.tireManagement.model.Tire;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;

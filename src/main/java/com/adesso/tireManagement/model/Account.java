@@ -1,7 +1,5 @@
 package com.adesso.tireManagement.model;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -18,7 +16,6 @@ public class Account {
     private Long id;
     private String username;
     private String password;
-
     private Boolean isAdmin;
 
     /**

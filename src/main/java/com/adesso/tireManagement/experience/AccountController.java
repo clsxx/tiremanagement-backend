@@ -18,8 +18,6 @@ public class AccountController {
     @Autowired
     AccountService accountService;
 
-    Logger log = LoggerFactory.getLogger(this.getClass());
-
     /**
      * Creates a new account if the account does not exist already
      * @param account
@@ -37,8 +35,6 @@ public class AccountController {
      */
     @PostMapping("/logIn")
     public Boolean logIn(@RequestBody ObjectNode json) {
-        log.info("Got request to create account " + json.toString());
-
         String username = (json.get("username") != null) ? json.get("username").asText() : null;
         String password = (json.get("password") != null) ? json.get("password").asText() : null;
         Boolean isAdminLogIn = (json.get("isAdminLogIn") != null) ? json.get("isAdminLogIn").asBoolean() : null;

@@ -4,7 +4,6 @@ import com.adesso.tireManagement.error.*;
 import com.adesso.tireManagement.model.Account;
 import com.adesso.tireManagement.repository.AccountRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 
 /**
